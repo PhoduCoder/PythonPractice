@@ -7,7 +7,7 @@
 #function to input the list
 
 user_entered_list=eval(input("Enter the list:"))
-print (user_entered_list, type(user_entered_list))
+#print (user_entered_list, type(user_entered_list))
 
 min=user_entered_list[0]
 max=user_entered_list[0]
