@@ -12,7 +12,6 @@ print (user_entered_list, type(user_entered_list))
 min=user_entered_list[0]
 max=user_entered_list[0]
 
-print ("before min and max", min,max)
 for i in range(len(user_entered_list)):
 	if user_entered_list[i]<min:
 		min=user_entered_list[i]
