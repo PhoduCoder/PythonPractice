@@ -13,7 +13,27 @@ from collections import Counter
 #Reading from a file
 with open('test.txt', 'r') as f:
 	string_words=f.read()
+
 #After f.read() is an object of string type
+#We have read the entire file in a string object
+#Also this object is loaded to memory
+#So in cases where we have huge text file,
+#the string will be a huge file 
+#and the entire string will be memory intensive
+
+def count_words_using_generator():
+	#Opening a file 
+	with open('test.txt', 'r') as f:
+		yield(f.read())
+
+generator_object=count_words_using_generator()
+
+for i in generator_object:
+	print (i, type(i))
+
+print ("End of generator code")
+	
+
 
 
 #Converting the string to a list based on spaces
