@@ -1,0 +1,2 @@
+This is a normal test file
+This was created to test the fetch and pull feature
