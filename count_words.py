@@ -24,9 +24,13 @@ with open('test.txt', 'r') as f:
 def count_words_using_generator():
 	#Opening a file 
 	with open('test.txt', 'r') as f:
-		yield(f.read())
+		yield(f.readlines())
 
 generator_object=count_words_using_generator()
+
+counter_object_generator_way=Counter(generator_object)
+
+print(counter_object_generator_way.keys())
 
 for i in generator_object:
 	print (i, type(i))
