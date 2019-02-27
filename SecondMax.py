@@ -5,8 +5,6 @@ for i in range(number_of_elements):
 	a.append(int(input('enter the list elements')))
 	
 
-print (a)
-
 #Use built-in function to calculate the maximum
 
 max_list=max(a)
@@ -21,18 +19,12 @@ b=a
 
 if (count_of_max_num == 1):
 
-	#b=a
-
-	#print(type(b), b)
-
 	b.remove(max_list)
-
 	second_max=max(b)
-
 	print("The second largest number is", second_max, "The new list is" ,b)
-
 else:
 	for i in range(count_of_max_num):
 		b.remove(max_list)
-
 	print ("The second largest is" , max(b))
+
+print("The original list is ",a)
